@@ -1,0 +1,7 @@
+<h2>Personen</h2>
+<ul>
+  <% items.forEach(p => { %>
+    <li><a href="/persons/<%= p.id %>"><%= p.vorname %> <%= p.nachname %></a></li>
+  <% }) %>
+</ul>
+<a href="/persons/new">Neue Person</a>

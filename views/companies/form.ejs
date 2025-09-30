@@ -1,0 +1,11 @@
+<h2>Unternehmen</h2>
+<form method="post" action="<%= edit ? '/companies/' + values.id : '/companies' %>">
+  <input name="firmenname" value="<%= values.firmenname || '' %>" placeholder="Firmenname">
+  <input name="ansprechpartner" value="<%= values.ansprechpartner || '' %>" placeholder="Ansprechpartner">
+  <input name="email" value="<%= values.email || '' %>" placeholder="E-Mail">
+  <input name="telefon" value="<%= values.telefon || '' %>" placeholder="Telefon">
+  <input name="adresse" value="<%= values.adresse || '' %>" placeholder="Adresse">
+  <input name="website" value="<%= values.website || '' %>" placeholder="Website">
+  <textarea name="notizen"><%= values.notizen || '' %></textarea>
+  <button>Speichern</button>
+</form>
