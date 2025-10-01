@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikumsverwaltung</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/styles.css">
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("show");
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="nav-header">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+    <ul>
+      <li><a href="/">Dashboard</a></li>
+      <li><a href="/persons">Personen</a></li>
+      <li><a href="/companies">Unternehmen</a></li>
+      <li><a href="/applications">Bewerbungen</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <%- body %>
+  </main>
+</body>
+</html>
