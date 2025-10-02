@@ -1,7 +1,0 @@
-<h2>Bewerbungen</h2>
-<ul>
-  <% items.forEach(a => { %>
-    <li><a href="/applications/<%= a.id %>"><%= a.vorname %> <%= a.nachname %> bei <%= a.firmenname %> – <%= a.status %></a></li>
-  <% }) %>
-</ul>
-<a href="/applications/new">Neue Bewerbung</a>

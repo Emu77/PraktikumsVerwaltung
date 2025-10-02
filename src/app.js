@@ -3,6 +3,7 @@ import path from "path";
 import expressLayouts from "express-ejs-layouts";
 
 const app = express();
+app.set("views", path.join(process.cwd(), "src/views"));
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));

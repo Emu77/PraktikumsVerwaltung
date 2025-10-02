@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Praktikumsverwaltung</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/styles.css">
   <script>
     function toggleMenu() {
-      document.querySelector("nav ul").classList.toggle("show");
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('open');
     }
   </script>
 </head>
 <body>
-  <nav>
+  <nav class="navbar">
     <div class="nav-header">
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <button id="menuBtn" class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
-    <ul>
+    <ul id="navMenu" class="nav-menu">
       <li><a href="/">Dashboard</a></li>
       <li><a href="/persons">Personen</a></li>
       <li><a href="/companies">Unternehmen</a></li>
