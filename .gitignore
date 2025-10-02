@@ -1,0 +1,40 @@
+# -----------------------------------
+# Node.js / npm
+# -----------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Lockfile optional ignorieren
+# Falls du reproducible builds willst -> drin lassen
+# Falls du nur package.json im Repo haben willst -> auskommentieren
+# package-lock.json
+
+# -----------------------------------
+# Umgebungsvariablen
+# -----------------------------------
+.env
+.env.local
+.env.*.local
+.env (Kopie)
+
+# -----------------------------------
+# Editor / temporäre Dateien
+# -----------------------------------
+*.swp
+*.swo
+*~
+
+# -----------------------------------
+# Backups und temporäre Dateien
+# -----------------------------------
+*.zip
+*.bak
+*.tmp
+
+# -----------------------------------
+# System Dateien
+# -----------------------------------
+.DS_Store
+Thumbs.db

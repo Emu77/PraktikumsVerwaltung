@@ -1,8 +1,0 @@
-PGHOST=localhost
-PGPORT=5432
-PGUSER=postgres
-PGPASSWORD=meinpasswort
-PGDATABASE=praktikumdb
-
-PORT=3000
-NODE_ENV=development
