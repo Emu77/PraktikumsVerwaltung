@@ -1,8 +1,0 @@
-<h2>Person</h2>
-<form method="post" action="<%= edit ? '/persons/' + values.id : '/persons' %>">
-  <input name="vorname" value="<%= values.vorname || '' %>" placeholder="Vorname">
-  <input name="nachname" value="<%= values.nachname || '' %>" placeholder="Nachname">
-  <input name="email" value="<%= values.email || '' %>" placeholder="E-Mail">
-  <input name="telefon" value="<%= values.telefon || '' %>" placeholder="Telefon">
-  <button>Speichern</button>
-</form>
